@@ -4,6 +4,9 @@ let addBtn = document.getElementById("addBtn");
 let addTxt = document.getElementById("addTxt");
 addTxt.value = "Enter your data here";
 showNotes();
+addTxt.addEventListener("click",function(e) {
+  addTxt.value = "";
+})
 addBtn.addEventListener("click", function(e) {
   let addTxt = document.getElementById("addTxt");
   let notes = localStorage.getItem("notes");
