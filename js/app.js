@@ -8,7 +8,7 @@ addBtn.addEventListener("click", function(e) {
   let addTxt = document.getElementById("addTxt");
   let notes = localStorage.getItem("notes");
   if (notes == null) {
-    let notesObj = [];
+    notesObj = [];
   } else {
     notesObj = JSON.parse(notes);
   }
@@ -23,7 +23,7 @@ function showNotes() {
   let addTxt = document.getElementById("addTxt");
   let notes = localStorage.getItem("notes");
   if (notes == null) {
-    let notesObj = [];
+    notesObj = [];
   } else {
     notesObj = JSON.parse(notes);
   }
@@ -54,7 +54,7 @@ function deleteNote(index) {
   let addTxt = document.getElementById("addTxt");
   let notes = localStorage.getItem("notes");
   if (notes == null) {
-    let notesObj = [];
+    notesObj = [];
   } else {
     notesObj = JSON.parse(notes);
   }
