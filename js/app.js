@@ -33,12 +33,13 @@ function showNotes() {
   let html = "";
   notesObj.forEach(function(element, index) {
     html += `
-        <div class="my-2 mx-2 noteCard" style="width: 18rem;">
+        <div class="my-2 mx-2 noteCard text-center" style="width: 18rem;">
           <div class="card-body">
             <h5 class="card-title">Note ${index + 1}</h5>
+            <div class="overflow-auto text-left" style="height: 12rem;">
             <p class="card-text">${element}
-            </p>
-            <button onclick="deleteNote(this.id)" class="btn btn-primary" id="${index}">Delete Note</button>
+            </p></div>
+            <button onclick="deleteNote(this.id)" class="btn btn-primary my-2" id="${index}">Delete Note</button>
           </div>
         </div>
         `;
