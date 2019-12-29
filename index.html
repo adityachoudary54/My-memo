@@ -30,14 +30,12 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            
-          </li>
+          <li class="nav-item active"></li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input
             class="form-control mr-sm-2"
-            id='searchTxt'
+            id="searchTxt"
             type="search"
             placeholder="Search"
             aria-label="Search"
@@ -53,11 +51,29 @@
       <h1>Welcome to My memo</h1>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Add a note</h5>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label for="note-title"
+                ><span class="input-group-text" id="basic-addon1"
+                  >Title:</span
+                ></label
+              >
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Username"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+              id="note-title"
+            >
+          </div>
           <div class="form-group">
             <textarea class="form-control" id="addTxt" rows="3"></textarea>
           </div>
-          <button class="btn btn-primary" id="addBtn">Add Note</button>
+          <button class="btn btn-primary" id="addBtn">
+            Add Note
+          </button>
         </div>
       </div>
       <h1>Your Notes</h1>
